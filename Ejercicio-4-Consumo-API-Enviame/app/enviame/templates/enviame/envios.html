@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Lista de envios</h1>
+<br>
+{% if object_list %}
+<ul class="list-group">
+  {% for object in object_list %}
+  <li class="list-group-item"><a href="{{ object.get_absolute_url }}">{{ object.slug }}</a>{% if object.response %} - API response: <small>[{{ object.response|truncatechars:200 }}]</small>{% else %}<small> - sin respuesta</small>{% endif %}</li>
+  {% endfor %}
+</ul>
+{% else %}
+<h2>lista vacia</h2>
+{% endif %}
+{% endblock content %}
