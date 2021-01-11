@@ -19,7 +19,7 @@ Para realizar este AD utilice python (jupyter notebook y pipenv) para implementa
 ### Ejercicio 4: Consumo API Envíame para la creación de un envío
 Utilicé el ambiente creado en el ejercicio 1 para consumir la API Enviame. Para esto desarrollé una aplicación web que crea, lista y revisa envíos. El formulario de creación de envío está respaldado en un modelo (base de datos) que antes de salvar consume la API Enviame, espera respuesta y la salva en la tabla junto al formulario.
 * http://0.0.0.0:8000/enviame/ - Lista de envios
-* http://0.0.0.0:8000/enviame/envios/<slug>/ - Revisa envio
+* http://0.0.0.0:8000/enviame/envios/'slug'/ - Revisa envio
 * http://0.0.0.0:8000/enviame/crear - Crea envio
 
 ### Ejercicio 5: Análisis + Desarrollo
